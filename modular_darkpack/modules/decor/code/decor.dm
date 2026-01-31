@@ -552,6 +552,9 @@
 	else
 		icon_state = "graffiti[rand(1, 3)]"
 
+/obj/effect/decal/graffiti/NeverShouldHaveComeHere(turf/here_turf)
+	return isclosedturf(here_turf)
+
 /obj/effect/decal/kopatich
 	name = "hide carpet"
 	pixel_w = -16
@@ -670,6 +673,7 @@
 	icon = 'modular_darkpack/modules/decor/icons/bury_pit.dmi'
 	icon_state = "pit0"
 	layer = ABOVE_OPEN_TURF_LAYER
+	plane = FLOOR_PLANE
 	anchored = TRUE
 	density = FALSE
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
