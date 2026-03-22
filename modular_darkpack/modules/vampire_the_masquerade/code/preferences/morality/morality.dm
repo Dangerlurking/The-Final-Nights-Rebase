@@ -41,7 +41,7 @@
 	stat_morality.morality_path = new value(target)
 
 /mob/living/proc/is_enlightenment()
-	var/datum/st_stat/morality_path/morality/stat_morality = storyteller_stats["[STAT_MORALITY]"]
+	var/datum/st_stat/morality_path/morality/stat_morality = storyteller_stats[STAT_MORALITY]
 	if(!stat_morality?.morality_path)
 		return FALSE
 
