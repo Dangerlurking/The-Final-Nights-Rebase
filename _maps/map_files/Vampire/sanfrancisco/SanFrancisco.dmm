@@ -8011,14 +8011,6 @@
 /obj/item/seeds/cannabis,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior)
-"ceX" = (
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
-	id = 607
-	},
-/turf/open/misc/grass/nosmooth,
-/area/vtm)
 "cfp" = (
 /obj/structure/table/wood,
 /obj/item/storage/ashtray{
@@ -14739,9 +14731,7 @@
 /turf/closed/wall/vampwall/rock,
 /area/vtm/interior/jazzclub)
 "dVb" = (
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
+/obj/transfer_point_vamp/umbral/exit{
 	id = 670
 	},
 /turf/open/floor/wood/old,
@@ -17568,15 +17558,6 @@
 /obj/machinery/oven/range,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/cog/pantry)
-"eKK" = (
-/obj/effect/decal/cleanable/litter,
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
-	id = 662
-	},
-/turf/open/floor/plating/sidewalkalt,
-/area/vtm/outside/chinatown)
 "eKL" = (
 /obj/structure/bookcase/random/religion{
 	pixel_y = 22;
@@ -19018,7 +18999,6 @@
 /area/vtm/interior)
 "fcS" = (
 /obj/structure/table/wood/fancy/red,
-/obj/effect/mapping_helpers/serial_number_log,
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/millennium_tower/f2)
 "fcW" = (
@@ -22769,9 +22749,7 @@
 /turf/open/floor/carpet/darkpack/old,
 /area/vtm/interior/sewer/nosferatu_warren)
 "gbK" = (
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
+/obj/transfer_point_vamp/umbral/exit{
 	id = 608
 	},
 /turf/open/floor/plating/canalplating,
@@ -23919,14 +23897,6 @@
 	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/interior/hotel)
-"gsK" = (
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
-	id = 603
-	},
-/turf/open/misc/grass,
-/area/vtm/outside/forest)
 "gsR" = (
 /obj/machinery/griddle,
 /turf/open/floor/city/bacotell,
@@ -26691,6 +26661,13 @@
 /obj/machinery/light/red/directional/south,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/endron_facility/plant)
+"hft" = (
+/obj/structure/flora/bush/fullgrass/style_random,
+/obj/transfer_point_vamp/umbral/exit{
+	id = 607
+	},
+/turf/open/misc/grass/nosmooth,
+/area/vtm)
 "hfz" = (
 /obj/effect/decal/pallet,
 /obj/structure/closet/crate/large{
@@ -26833,6 +26810,7 @@
 /area/vtm/interior/ghetto)
 "hht" = (
 /obj/item/kirbyplants/darkpack,
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment/pacific)
 "hhw" = (
@@ -30158,6 +30136,12 @@
 /obj/effect/turf_decal/siding/green,
 /turf/open/floor/city/circled,
 /area/vtm/interior/shop)
+"icp" = (
+/obj/transfer_point_vamp/umbral/exit{
+	id = 664
+	},
+/turf/open/floor/plating/sidewalk/poor,
+/area/vtm/interior/clinic)
 "icu" = (
 /obj/structure/table,
 /obj/item/gun/ballistic/revolver/darkpack/magnum{
@@ -31235,14 +31219,6 @@
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/church/staff)
-"ipt" = (
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
-	id = 669
-	},
-/turf/open/floor/plating/roofwalk,
-/area/vtm)
 "ipv" = (
 /obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plating/sidewalk/poor,
@@ -31583,6 +31559,7 @@
 /area/vtm/interior)
 "isQ" = (
 /obj/effect/decal/cleanable/trash,
+/obj/machinery/light/small/dim/directional/west,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment/pacific)
 "isU" = (
@@ -31650,9 +31627,7 @@
 /area/vtm/interior/anarch)
 "itY" = (
 /obj/effect/decal/cleanable/trash,
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
+/obj/transfer_point_vamp/umbral/exit{
 	id = 605
 	},
 /turf/open/floor/plating/sidewalk,
@@ -32054,6 +32029,12 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/vtm/interior/giovanni)
+"iys" = (
+/obj/transfer_point_vamp/umbral/exit{
+	id = 668
+	},
+/turf/open/floor/plating/rough,
+/area/vtm)
 "iyM" = (
 /obj/effect/decal/graffiti{
 	icon_state = "graffiti9"
@@ -36172,9 +36153,7 @@
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/clinic)
 "jEx" = (
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
+/obj/transfer_point_vamp/umbral/exit{
 	id = 665
 	},
 /turf/open/floor/plating/canalplating,
@@ -39489,7 +39468,6 @@
 	},
 /obj/structure/table,
 /obj/structure/platform/lowwall/market,
-/obj/effect/mapping_helpers/serial_number_log,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/police/upstairs)
 "kzw" = (
@@ -40372,13 +40350,6 @@
 /obj/effect/mapping_helpers/door/lock_difficulty/six,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/endron_facility/plant)
-"kLS" = (
-/obj/structure/platform/lowwall/brick/window,
-/obj/structure/curtain/bounty{
-	pixel_y = 8
-	},
-/turf/open/floor/plating/sidewalk/poor,
-/area/vtm/interior/apartment/pacific)
 "kLY" = (
 /obj/structure/kitchenspike,
 /turf/open/floor/wood/rough,
@@ -41641,8 +41612,7 @@
 "lfG" = (
 /obj/structure/table/countertop,
 /obj/structure/retail/gummaguts_menu{
-	dir = 1;
-	pixel_y = 9
+	dir = 1
 	},
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/shop)
@@ -42724,6 +42694,12 @@
 	},
 /turf/open/misc/grass,
 /area/vtm/outside/forest)
+"ltC" = (
+/obj/transfer_point_vamp/umbral/exit{
+	id = 667
+	},
+/turf/open/floor/plating/stone,
+/area/vtm)
 "ltD" = (
 /obj/structure/chair/sofa/corner/brown{
 	color = "#525252";
@@ -43252,9 +43228,7 @@
 /turf/open/floor/city/toilet,
 /area/vtm/interior/laundromat)
 "lBp" = (
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
+/obj/transfer_point_vamp/umbral/exit{
 	id = 663
 	},
 /turf/open/floor/wood/smooth/old,
@@ -44531,12 +44505,10 @@
 /obj/structure/toilet{
 	pixel_y = 16
 	},
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
+/obj/machinery/light/small/directional/north,
+/obj/transfer_point_vamp/umbral/exit{
 	id = 672
 	},
-/obj/machinery/light/small/directional/north,
 /turf/open/floor/city/factory,
 /area/vtm/interior/strip)
 "lUK" = (
@@ -46604,12 +46576,10 @@
 /turf/open/floor/plating/granite/black,
 /area/vtm/interior/millennium_tower)
 "mvi" = (
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
+/obj/effect/turf_decal/darkpack/dirt,
+/obj/transfer_point_vamp/umbral/exit{
 	id = 661
 	},
-/obj/effect/turf_decal/darkpack/dirt,
 /turf/open/misc/grass/nosmooth,
 /area/vtm/outside/park)
 "mvm" = (
@@ -48738,9 +48708,7 @@
 /turf/open/floor/plating/granite/black,
 /area/vtm/interior/strip)
 "mXf" = (
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
+/obj/transfer_point_vamp/umbral/exit{
 	id = 606
 	},
 /turf/open/floor/wood/old,
@@ -49245,6 +49213,12 @@
 /obj/effect/landmark/start/darkpack/primogen/banu,
 /turf/open/floor/carpet,
 /area/vtm/interior/banu/haven)
+"ndP" = (
+/obj/transfer_point_vamp/umbral/exit{
+	id = 602
+	},
+/turf/open/misc/grass,
+/area/vtm/outside/forest)
 "ndQ" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 8
@@ -49390,6 +49364,10 @@
 /obj/machinery/light/red/directional/north,
 /turf/open/floor/carpet/darkpack/old,
 /area/vtm/interior/sewer/nosferatu_bar)
+"ngc" = (
+/obj/machinery/light/small/directional/north,
+/turf/open/floor/wood/smooth/old,
+/area/vtm/interior/apartment/pacific)
 "ngq" = (
 /obj/structure/stone_tile/block{
 	dir = 8
@@ -53120,15 +53098,6 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment)
-"oeb" = (
-/obj/structure/flora/bush/sparsegrass/style_random,
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
-	id = 602
-	},
-/turf/open/misc/grass,
-/area/vtm/outside/forest)
 "oem" = (
 /obj/effect/turf_decal/bordur{
 	dir = 8
@@ -55885,6 +55854,13 @@
 /obj/effect/mapping_helpers/door/lock_difficulty/four,
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/clinic)
+"oNL" = (
+/obj/structure/flora/bush/sparsegrass/style_random,
+/obj/transfer_point_vamp/umbral/exit{
+	id = 603
+	},
+/turf/open/misc/grass,
+/area/vtm/outside/forest)
 "oNQ" = (
 /obj/effect/turf_decal/bordur{
 	dir = 6
@@ -55955,6 +55931,12 @@
 /obj/effect/decal/cleanable/litter,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/ghetto)
+"oOP" = (
+/obj/transfer_point_vamp/umbral/exit{
+	id = 669
+	},
+/turf/open/floor/plating/roofwalk,
+/area/vtm)
 "oOQ" = (
 /obj/structure/fluff/paper{
 	dir = 8
@@ -57292,14 +57274,6 @@
 /obj/item/storage/box/handcuffs,
 /turf/open/misc/dirt,
 /area/vtm/interior/police/fed)
-"phF" = (
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
-	id = 609
-	},
-/turf/open/floor/plating/roofwalk,
-/area/vtm)
 "phQ" = (
 /obj/effect/decal/fakelattice{
 	density = 0
@@ -59389,9 +59363,8 @@
 /area/vtm/outside/culture)
 "pLe" = (
 /obj/structure/table/countertop,
-/obj/machinery/microwave{
-	pixel_y = 9
-	},
+/obj/machinery/microwave,
+/obj/machinery/light/directional/north,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/shop)
 "pLk" = (
@@ -62957,6 +62930,7 @@
 /obj/effect/turf_decal/siding/wideplating/dark/corner{
 	dir = 4
 	},
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment/pacific)
 "qHN" = (
@@ -65924,6 +65898,9 @@
 	pixel_y = 11
 	},
 /obj/effect/decal/cleanable/trash,
+/obj/transfer_point_vamp/umbral/exit{
+	id = 662
+	},
 /turf/open/floor/plating/sidewalkalt,
 /area/vtm/outside/chinatown)
 "rwN" = (
@@ -67421,14 +67398,6 @@
 /obj/item/reagent_containers/cup/glass/flask,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm)
-"rRQ" = (
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
-	id = 601
-	},
-/turf/open/floor/plating/sidewalk/poor,
-/area/vtm)
 "rRR" = (
 /obj/structure/vampipe{
 	icon_state = "piping3";
@@ -68848,14 +68817,6 @@
 /obj/effect/decal/wallpaper/paper/darkred,
 /turf/closed/wall/vampwall/brick,
 /area/vtm/interior/littleitaly/apartments)
-"soB" = (
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
-	id = 664
-	},
-/turf/open/floor/plating/sidewalk/poor,
-/area/vtm/interior/clinic)
 "soH" = (
 /obj/structure/table,
 /obj/item/stack/dollar/hundred,
@@ -70301,9 +70262,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
+/obj/transfer_point_vamp/umbral/exit{
 	id = 604
 	},
 /turf/open/openspace,
@@ -70389,6 +70348,7 @@
 	},
 /obj/effect/decal/shadow,
 /obj/effect/decal/cleanable/litter,
+/obj/machinery/light/small/dim/directional/east,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/apartment/pacific)
 "sJs" = (
@@ -71288,9 +71248,7 @@
 	pixel_y = 16
 	},
 /obj/machinery/light/small/red/directional/north,
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
+/obj/transfer_point_vamp/umbral/exit{
 	id = 671
 	},
 /turf/open/floor/city/factory,
@@ -75364,9 +75322,7 @@
 "tZp" = (
 /obj/effect/turf_decal/siding/wood/dark,
 /obj/structure/table/wood,
-/obj/machinery/microwave{
-	pixel_y = 9
-	},
+/obj/machinery/microwave,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/apartment/pacific)
 "tZC" = (
@@ -75765,14 +75721,6 @@
 	},
 /turf/open/floor/wood/old,
 /area/vtm/outside/fishermanswharf/ghetto)
-"uej" = (
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
-	id = 668
-	},
-/turf/open/floor/plating/rough,
-/area/vtm)
 "ueq" = (
 /obj/structure/lattice,
 /obj/machinery/light/small/directional/south,
@@ -81503,14 +81451,6 @@
 /obj/effect/decal/carpet,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/shop)
-"vMX" = (
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
-	id = 667
-	},
-/turf/open/floor/plating/stone,
-/area/vtm)
 "vNa" = (
 /obj/structure/hedge,
 /obj/effect/turf_decal/bordur/corner,
@@ -84302,6 +84242,12 @@
 /obj/structure/closet/crate/large,
 /turf/open/floor/plating/rough,
 /area/vtm/interior)
+"wzs" = (
+/obj/transfer_point_vamp/umbral/exit{
+	id = 609
+	},
+/turf/open/floor/plating/roofwalk,
+/area/vtm)
 "wzw" = (
 /obj/structure/curtain{
 	pixel_y = 15
@@ -86342,6 +86288,13 @@
 	dir = 8
 	},
 /turf/open/floor/plating/sidewalk,
+/area/vtm)
+"xaG" = (
+/obj/item/melee/vamp/brick,
+/obj/transfer_point_vamp/umbral/exit{
+	id = 601
+	},
+/turf/open/floor/plating/sidewalk/poor,
 /area/vtm)
 "xaK" = (
 /obj/effect/turf_decal/siding/wideplating/blue{
@@ -88392,11 +88345,6 @@
 /obj/structure/chair/wood/darkpack,
 /turf/open/floor/wood/smooth,
 /area/vtm/interior/setite)
-"xEZ" = (
-/obj/structure/table/wood,
-/obj/effect/mapping_helpers/serial_number_log,
-/turf/open/floor/carpet/green,
-/area/vtm/interior/endron_facility/restricted)
 "xFc" = (
 /obj/effect/turf_decal/siding/wideplating/green{
 	dir = 4
@@ -90440,9 +90388,7 @@
 /turf/open/misc/dirt,
 /area/vtm/outside/forest)
 "yhu" = (
-/obj/transfer_point_vamp{
-	alpha = 0;
-	density = 0;
+/obj/transfer_point_vamp/umbral/exit{
 	id = 666
 	},
 /turf/open/misc/beach/vamp,
@@ -144222,7 +144168,7 @@ tao
 tyZ
 mGV
 fPt
-iJs
+sao
 iJs
 plE
 dAL
@@ -144442,7 +144388,7 @@ tzU
 baj
 xQB
 qrc
-qrc
+kHB
 gXN
 tao
 hdQ
@@ -145398,7 +145344,7 @@ uvs
 oyz
 oyz
 wUD
-vMX
+wUD
 oyz
 oyz
 aOb
@@ -145602,7 +145548,7 @@ uvs
 uvs
 uvs
 tGm
-wUD
+ltC
 wUD
 oyz
 wUD
@@ -149644,8 +149590,8 @@ cJF
 cJF
 cJF
 mPm
-oeb
-cJF
+pDA
+ndP
 pDA
 cJF
 pDA
@@ -156956,7 +156902,7 @@ kcu
 urZ
 lax
 szp
-eKK
+qMW
 kgF
 mGZ
 kMR
@@ -174882,7 +174828,7 @@ sWS
 sWS
 sWS
 sWS
-gsK
+cJF
 pDA
 pDA
 pDA
@@ -175086,7 +175032,7 @@ faX
 faX
 cJF
 cJF
-pDA
+oNL
 pDA
 pDA
 cJF
@@ -185037,8 +184983,8 @@ tCI
 tCI
 dAL
 dAL
-dAL
-dAL
+tCI
+tCI
 dAL
 dAL
 mjT
@@ -185448,7 +185394,7 @@ tyZ
 hiB
 vFZ
 nfa
-kLS
+dAL
 mjT
 mjT
 mjT
@@ -185652,7 +185598,7 @@ tyZ
 sao
 iJs
 urg
-kLS
+dAL
 mjT
 mjT
 mjT
@@ -186085,7 +186031,7 @@ mjT
 mjT
 mjT
 fmQ
-uej
+mAa
 mAa
 bBk
 mAa
@@ -186289,7 +186235,7 @@ mjT
 mjT
 mjT
 fmQ
-mAa
+iys
 mAa
 bBk
 mAa
@@ -186455,7 +186401,7 @@ xPo
 iJs
 iJs
 dAL
-iJs
+ngc
 hca
 mgm
 mgm
@@ -192333,7 +192279,7 @@ rNr
 gRp
 sZw
 arx
-ipt
+xEp
 wmS
 mjT
 mjT
@@ -192537,7 +192483,7 @@ vNX
 oex
 ykR
 arx
-xEp
+oOP
 wmS
 mjT
 mjT
@@ -203954,7 +203900,7 @@ yjk
 trk
 jZL
 stv
-xEZ
+bIg
 eup
 yjk
 xEp
@@ -205832,7 +205778,7 @@ mjT
 mjT
 mjT
 mhc
-soB
+xjO
 xjO
 isM
 jPs
@@ -206036,7 +205982,7 @@ xXG
 mjT
 mjT
 mhc
-xjO
+icp
 xjO
 isM
 dNw
@@ -226645,7 +226591,7 @@ xEp
 xEp
 xEp
 xEp
-phF
+xEp
 xEp
 xEp
 xEp
@@ -226849,7 +226795,7 @@ xEp
 xEp
 xEp
 xEp
-xEp
+wzs
 xEp
 xEp
 xEp
@@ -241928,7 +241874,7 @@ vBm
 xgj
 eFC
 acw
-vBm
+hft
 xSq
 vBm
 eFC
@@ -242133,7 +242079,7 @@ acw
 xgj
 acw
 bTt
-ceX
+acw
 qMu
 acw
 oeY
@@ -249587,7 +249533,7 @@ vWf
 dTE
 hnz
 oDB
-pQS
+xaG
 ssj
 jXr
 ylv
@@ -249791,7 +249737,7 @@ vWf
 dTE
 hnz
 voy
-rRQ
+ssj
 ssj
 frT
 ylv
