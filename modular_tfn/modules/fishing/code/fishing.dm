@@ -54,6 +54,7 @@
 /obj/structure/retail/camping/Initialize()
 	. = ..()
 	products_list += new /datum/data/vending_product("fishing lines kit", /obj/item/storage/box/fishing_lines/master)
+	products_list += new /datum/data/vending_product("fish cooler kit", /obj/item/cooler_kit)
 
 /obj/structure/closet/crate/cooler
 	name = "cooler"
