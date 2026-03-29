@@ -45,7 +45,7 @@
 		return
 	var/sc_diff = clamp(round(5 - difficulty * 0.04), 1, 5)
 	var/datum/skillcheck/sc = new()
-	sc.start(user, sc_diff, CALLBACK(src, PROC_REF(on_skillcheck_result)))
+	INVOKE_ASYNC(sc, TYPE_PROC_REF(/datum/skillcheck, start), user, sc_diff, CALLBACK(src, PROC_REF(on_skillcheck_result)))
 
 /datum/fishing_challenge/proc/on_skillcheck_result(mob/living/cb_user, passed)
 	complete(passed)
