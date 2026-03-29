@@ -50,12 +50,6 @@
 /datum/fishing_challenge/proc/on_skillcheck_result(mob/living/cb_user, passed)
 	complete(passed)
 
-// add the auto-reel to the camping store
-/obj/structure/retail/camping/Initialize()
-	. = ..()
-	products_list += new /datum/data/vending_product("fishing lines kit", /obj/item/storage/box/fishing_lines/master)
-	products_list += new /datum/data/vending_product("fish cooler kit", /obj/item/cooler_kit)
-
 /obj/structure/closet/crate/cooler
 	name = "cooler"
 	desc = "An insulated cooler full of ice. Great for keeping fish fresh."

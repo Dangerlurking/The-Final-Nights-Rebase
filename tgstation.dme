@@ -7762,5 +7762,6 @@
 #include "modular_darkpack\modules\z_travel\code\transfer_point.dm"
 #include "modular_tfn\master_files\code\modules\fishing\sources\subtypes\turfs.dm"
 #include "modular_tfn\modules\fishing\code\fishing.dm"
+#include "modular_tfn\modules\fishing\code\store_overrides.dm"
 #include "modular_tfn\modules\skillcheck\code\skillcheck.dm"
 // END_INCLUDE
