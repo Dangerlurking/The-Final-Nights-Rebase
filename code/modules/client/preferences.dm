@@ -140,6 +140,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	if(parent)
 		apply_all_client_preferences()
 		parent.set_macros()
+		parent.update_special_keybinds(src) // TFN EDIT - fix WASD binds being null due to a race condition
 
 	if(!loaded_preferences_successfully)
 		save_preferences()
