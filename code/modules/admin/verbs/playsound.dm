@@ -83,7 +83,8 @@ GLOBAL_VAR_INIT(web_sound_cooldown, 0)
 		var/datum/http_request/request = new()
 		request.prepare(RUSTG_HTTP_METHOD_GET, request_url, "", list("Content-Type" = "application/json"))
 		request.begin_async()
-		UNTIL_OR_TIMEOUT(request.is_complete(), 20 SECONDS)
+		var/actual_timeout = REALTIMEOFDAY + 20 SECONDS
+		UNTIL(request.is_complete() || REALTIMEOFDAY > actual_timeout)
 		var/datum/http_response/http_response = request.into_response()
 		if(http_response.errored || http_response.status_code != 200)
 			return
