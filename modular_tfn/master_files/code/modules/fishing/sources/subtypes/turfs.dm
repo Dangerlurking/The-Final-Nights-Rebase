@@ -32,6 +32,7 @@
 		/obj/item/fish/darkpack/swordfish = 2,
 		/obj/item/fish/darkpack/mastodon = 2,
 		/obj/item/fish/darkpack/sacabambaspis = 1,
+		/obj/structure/mystery_box/fishing = 1,
 	)
 	fish_counts = list(
 		/obj/item/fish/darkpack/holo_clownfish = 2,
