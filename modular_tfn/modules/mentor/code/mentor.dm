@@ -65,6 +65,60 @@ GLOBAL_PROTECT(mentor_href_token)
 /proc/MentorHrefToken(forceGlobal = FALSE)
 	return "mentor_token=[RawMentorHrefToken(forceGlobal)]"
 
+/proc/load_mentors(no_update, initial = FALSE)
+	if(!initial)
+		if(!global.config.PreConfigReload())
+			return
+
+	var/dbfail
+	if(!CONFIG_GET(flag/mentor_legacy_system) && !SSdbcore.Connect())
+		message_admins("Failed to connect to database while loading mentors. Loading from backup.")
+		log_sql("Failed to connect to database while loading mentors. Loading from backup.")
+		dbfail = TRUE
+
+	GLOB.mentor_datums.Cut()
+	for(var/client/C in GLOB.mentors)
+		C.remove_mentor_verbs()
+		C.mentor_datum = null
+	GLOB.mentors.Cut()
+
+	if(CONFIG_GET(flag/mentor_legacy_system))
+		var/list/lines = world.file2list("config/mentors.txt")
+		for(var/line in lines)
+			if(!length(line))
+				continue
+			if(findtextEx(line, "#", 1, 2))
+				continue
+			new /datum/mentors(line)
+		return
+
+	if(!dbfail)
+		var/datum/db_query/query_load_mentors = SSdbcore.NewQuery("SELECT ckey FROM [format_table_name("mentor")]")
+		if(!query_load_mentors.Execute())
+			message_admins("Error loading mentors from database. Loading from backup.")
+			log_sql("Error loading mentors from database. Loading from backup.")
+			dbfail = TRUE
+		else
+			while(query_load_mentors.NextRow())
+				var/mentor_ckey = ckey(query_load_mentors.item[1])
+				if(GLOB.mentor_datums[mentor_ckey])
+					continue
+				new /datum/mentors(mentor_ckey)
+		qdel(query_load_mentors)
+
+	if(dbfail)
+		var/backup_file = file2text("data/mentors_backup.json")
+		if(backup_file == null)
+			log_world("Unable to locate mentors backup file.")
+			return
+		var/list/backup_file_json = json_decode(backup_file)
+		for(var/backup_mentor_ckey in backup_file_json["mentors"])
+			if(GLOB.mentor_datums[ckey(backup_mentor_ckey)])
+				continue
+			new /datum/mentors(ckey(backup_mentor_ckey))
+
+	return dbfail
+
 
 /client
 	/// Acts the same way holder does towards admin: it holds the mentor datum. if set, the guy's a mentor.
