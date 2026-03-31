@@ -260,6 +260,8 @@
 	average_weight = 150
 	dedicated_in_aquarium_icon_state = "angelfish_small"
 	aquarium_vc_color = "#c8a832"
+	sprite_width = 4
+	sprite_height = 7
 
 /obj/item/fish/darkpack/angelfish/Initialize(mapload)
 	. = ..()
@@ -275,6 +277,8 @@
 	average_weight = 100
 	dedicated_in_aquarium_icon_state = "clownfish_small"
 	aquarium_vc_color = "#e8692b"
+	sprite_width = 7
+	sprite_height = 4
 
 /obj/item/fish/darkpack/clownfish/Initialize(mapload)
 	. = ..()
@@ -290,6 +294,8 @@
 	average_weight = 100
 	dedicated_in_aquarium_icon_state = "holo_clownfish_small"
 	aquarium_vc_color = "#7bd4f0"
+	sprite_width = 7
+	sprite_height = 4
 
 /obj/item/fish/darkpack/holo_clownfish/Initialize(mapload)
 	. = ..()
@@ -305,6 +311,8 @@
 	average_weight = 120
 	dedicated_in_aquarium_icon_state = "lanternfish_small"
 	aquarium_vc_color = "#204878"
+	sprite_width = 6
+	sprite_height = 5
 
 /obj/item/fish/darkpack/lanternfish/Initialize(mapload)
 	. = ..()
@@ -320,6 +328,8 @@
 	average_weight = 80
 	dedicated_in_aquarium_icon_state = "goldfish"
 	aquarium_vc_color = "#f5a623"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/goldfish/Initialize(mapload)
 	. = ..()
@@ -335,6 +345,8 @@
 	average_weight = 100
 	dedicated_in_aquarium_icon_state = "dwarf_moonfish_small"
 	aquarium_vc_color = "#90c8e0"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/dwarf_moonfish/Initialize(mapload)
 	. = ..()
@@ -350,6 +362,8 @@
 	average_weight = 250
 	dedicated_in_aquarium_icon_state = "tizira_moonfish_small"
 	aquarium_vc_color = "#9060e8"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/tizira_moonfish/Initialize(mapload)
 	. = ..()
@@ -365,6 +379,8 @@
 	average_weight = 200
 	dedicated_in_aquarium_icon_state = "needlefish_small"
 	aquarium_vc_color = "#60c878"
+	sprite_width = 8
+	sprite_height = 2
 
 /obj/item/fish/darkpack/needlefish/Initialize(mapload)
 	. = ..()
@@ -380,6 +396,8 @@
 	average_weight = 900
 	dedicated_in_aquarium_icon_state = "armorfish_small"
 	aquarium_vc_color = "#607080"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/armorfish/Initialize(mapload)
 	. = ..()
@@ -395,6 +413,8 @@
 	average_weight = 300
 	dedicated_in_aquarium_icon_state = "pufferfish_small"
 	aquarium_vc_color = "#e8c840"
+	sprite_width = 8
+	sprite_height = 6
 
 /obj/item/fish/darkpack/pufferfish/Initialize(mapload)
 	. = ..()
@@ -410,6 +430,8 @@
 	average_weight = 400
 	dedicated_in_aquarium_icon_state = "emulsijack_small"
 	aquarium_vc_color = "#9060c0"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/emulsijack/Initialize(mapload)
 	. = ..()
@@ -425,6 +447,8 @@
 	average_weight = 250
 	dedicated_in_aquarium_icon_state = "donkfish_small"
 	aquarium_vc_color = "#8a6840"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/donkfish/Initialize(mapload)
 	. = ..()
@@ -441,6 +465,8 @@
 	average_weight = 200
 	dedicated_in_aquarium_icon_state = "ratfish_small"
 	aquarium_vc_color = "#7a6a4a"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/ratfish/Initialize(mapload)
 	. = ..()
@@ -457,6 +483,8 @@
 	average_weight = 350
 	dedicated_in_aquarium_icon_state = "chrab_small"
 	aquarium_vc_color = "#c85030"
+	sprite_width = 6
+	sprite_height = 5
 
 /obj/item/fish/darkpack/chrab/Initialize(mapload)
 	. = ..()
@@ -473,6 +501,8 @@
 	average_weight = 400
 	dedicated_in_aquarium_icon_state = "arctic_chrab_small"
 	aquarium_vc_color = "#90b8c8"
+	sprite_width = 6
+	sprite_height = 5
 
 /obj/item/fish/darkpack/arctic_chrab/Initialize(mapload)
 	. = ..()
@@ -488,6 +518,8 @@
 	average_weight = 150
 	dedicated_in_aquarium_icon_state = "half_fish_small"
 	aquarium_vc_color = "#c8c8c8"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/half_fish/Initialize(mapload)
 	. = ..()
@@ -504,6 +536,8 @@
 	average_weight = 700
 	dedicated_in_aquarium_icon_state = "bonemass_small"
 	aquarium_vc_color = "#e8e4d0"
+	sprite_width = 5
+	sprite_height = 5
 
 /obj/item/fish/darkpack/bonemass/Initialize(mapload)
 	. = ..()
@@ -519,6 +553,8 @@
 	average_weight = 500
 	dedicated_in_aquarium_icon_state = "sludgefish_small"
 	aquarium_vc_color = "#507840"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/sludgefish/Initialize(mapload)
 	. = ..()
@@ -534,6 +570,8 @@
 	average_weight = 550
 	dedicated_in_aquarium_icon_state = "sludgefish_purple_small"
 	aquarium_vc_color = "#785090"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/sludgefish_purple/Initialize(mapload)
 	. = ..()
@@ -549,6 +587,8 @@
 	average_weight = 180
 	dedicated_in_aquarium_icon_state = "starfish_small"
 	aquarium_vc_color = "#e05830"
+	sprite_width = 5
+	sprite_height = 5
 
 /obj/item/fish/darkpack/starfish/Initialize(mapload)
 	. = ..()
@@ -564,6 +604,8 @@
 	average_weight = 200
 	dedicated_in_aquarium_icon_state = "zipzap_small"
 	aquarium_vc_color = "#f0e840"
+	sprite_width = 6
+	sprite_height = 3
 
 /obj/item/fish/darkpack/zipzap/Initialize(mapload)
 	. = ..()
@@ -580,6 +622,8 @@
 	average_weight = 450
 	dedicated_in_aquarium_icon_state = "jumpercable_small"
 	aquarium_vc_color = "#e8c830"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/jumpercable/Initialize(mapload)
 	. = ..()
@@ -595,6 +639,8 @@
 	average_weight = 600
 	dedicated_in_aquarium_icon_state = "arctic_char_small"
 	aquarium_vc_color = "#ff8c69"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/arctic_char/Initialize(mapload)
 	. = ..()
@@ -610,6 +656,8 @@
 	average_weight = 1200
 	dedicated_in_aquarium_icon_state = "stingray_small"
 	aquarium_vc_color = "#405878"
+	sprite_width = 8
+	sprite_height = 7
 
 /obj/item/fish/darkpack/stingray/Initialize(mapload)
 	. = ..()
@@ -625,6 +673,8 @@
 	average_weight = 700
 	dedicated_in_aquarium_icon_state = "sockeye_small"
 	aquarium_vc_color = "#c44020"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/sockeye/Initialize(mapload)
 	. = ..()
@@ -640,6 +690,8 @@
 	average_weight = 1800
 	dedicated_in_aquarium_icon_state = "swordfish_small"
 	aquarium_vc_color = "#4870a0"
+	sprite_width = 13
+	sprite_height = 6
 
 /obj/item/fish/darkpack/swordfish/Initialize(mapload)
 	. = ..()
@@ -655,6 +707,8 @@
 	average_weight = 200
 	dedicated_in_aquarium_icon_state = "bumpy_small"
 	aquarium_vc_color = "#a08060"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/bumpy/Initialize(mapload)
 	. = ..()
@@ -670,6 +724,8 @@
 	average_weight = 300
 	dedicated_in_aquarium_icon_state = "sand_surfer_small"
 	aquarium_vc_color = "#c8b870"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/sand_surfer/Initialize(mapload)
 	. = ..()
@@ -685,6 +741,8 @@
 	average_weight = 180
 	dedicated_in_aquarium_icon_state = "three_eyes"
 	aquarium_vc_color = "#50a060"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/three_eyes/Initialize(mapload)
 	. = ..()
@@ -700,6 +758,8 @@
 	average_weight = 30
 	dedicated_in_aquarium_icon_state = "tadpole_small"
 	aquarium_vc_color = "#404840"
+	sprite_width = 3
+	sprite_height = 1
 
 /obj/item/fish/darkpack/tadpole/Initialize(mapload)
 	. = ..()
@@ -715,6 +775,8 @@
 	average_weight = 500
 	dedicated_in_aquarium_icon_state = "squid_small"
 	aquarium_vc_color = "#c84870"
+	sprite_width = 4
+	sprite_height = 5
 
 /obj/item/fish/darkpack/squid/Initialize(mapload)
 	. = ..()
@@ -730,6 +792,8 @@
 	average_weight = 300
 	dedicated_in_aquarium_icon_state = "perch"
 	aquarium_vc_color = "#7a9932"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/perch/Initialize(mapload)
 	. = ..()
@@ -745,6 +809,8 @@
 	average_weight = 550
 	dedicated_in_aquarium_icon_state = "plaice_small"
 	aquarium_vc_color = "#a89060"
+	sprite_width = 6
+	sprite_height = 7
 
 /obj/item/fish/darkpack/plaice/Initialize(mapload)
 	. = ..()
@@ -760,6 +826,8 @@
 	average_weight = 800
 	dedicated_in_aquarium_icon_state = "monkfish_small"
 	aquarium_vc_color = "#6a5040"
+	sprite_width = 7
+	sprite_height = 7
 
 /obj/item/fish/darkpack/monkfish/Initialize(mapload)
 	. = ..()
@@ -775,6 +843,8 @@
 	average_weight = 1000
 	dedicated_in_aquarium_icon_state = "pike_small"
 	aquarium_vc_color = "#4a7a3a"
+	sprite_width = 7
+	sprite_height = 3
 
 /obj/item/fish/darkpack/pike/Initialize(mapload)
 	. = ..()
@@ -790,6 +860,8 @@
 	average_weight = 1200
 	dedicated_in_aquarium_icon_state = "armored_pike_small"
 	aquarium_vc_color = "#6a7a5a"
+	sprite_width = 7
+	sprite_height = 3
 
 /obj/item/fish/darkpack/armored_pike/Initialize(mapload)
 	. = ..()
@@ -805,6 +877,8 @@
 	average_weight = 350
 	dedicated_in_aquarium_icon_state = "sacabambaspis_small"
 	aquarium_vc_color = "#a0c890"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/sacabambaspis/Initialize(mapload)
 	. = ..()
@@ -820,6 +894,8 @@
 	average_weight = 80
 	dedicated_in_aquarium_icon_state = "baby_carp_small"
 	aquarium_vc_color = "#8890a0"
+	sprite_width = 5
+	sprite_height = 3
 
 /obj/item/fish/darkpack/baby_carp/Initialize(mapload)
 	. = ..()
