@@ -29,4 +29,6 @@
 		new /datum/data/vending_product("left medical eyepatch", /obj/item/clothing/glasses/vampire/eyepatch/white_left, 25),
 		new /datum/data/vending_product("white veil", /obj/item/clothing/glasses/vampire/veil, 25),
 		new /datum/data/vending_product("black veil", /obj/item/clothing/glasses/vampire/veil/black, 25),
+		new /datum/data/vending_product("frilly headband", /obj/item/clothing/head/vampire/headband_frilly, 25),
+		new /datum/data/vending_product("black headdress", /obj/item/clothing/head/vampire/headdress_black, 25),
 	)
