@@ -13,7 +13,7 @@
 	name = "bucket hat"
 	desc = "Music festival high fashion."
 	icon_state = "bucket_hat"
-	flags_cover = HEADCOVERSEYES
+	flags_cover = HEADCOVERSEYES //Clothing previously had this flag, check if we want to actually keep it? - STOPS KIASYD FROM BREACHING
 
 /obj/item/clothing/head/vampire/hat/boater
 	name = "boater hat"
@@ -40,7 +40,7 @@
 	name = "picture hat"
 	desc = "An old-fashioned hat with a brim low enough to cover your eyes."
 	icon_state = "picture"
-	flags_cover = HEADCOVERSEYES //check if anything actually uses this flag?
+	flags_cover = HEADCOVERSEYES //Clothing previously had this flag, check if we want to actually keep it? - STOPS KIASYD FROM BREACHING
 	LCU_HEAD_ICONS
 
 /obj/item/clothing/head/vampire/picture/red
