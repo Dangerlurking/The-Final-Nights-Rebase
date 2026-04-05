@@ -54,7 +54,7 @@
 
 /datum/discipline/Destroy(force)
 	action_type = null
-	current_power = null
+	QDEL_NULL(current_power)
 	QDEL_LIST(known_powers)
 	all_powers = null
 	owner = null
