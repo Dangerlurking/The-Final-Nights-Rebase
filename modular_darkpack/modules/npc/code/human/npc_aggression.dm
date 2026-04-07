@@ -1,7 +1,7 @@
 /mob/living/carbon/human/npc/proc/Aggro(mob/living/victim, attacked = FALSE)
 	if (stat == DEAD)
 		return
-	if (attacked && ((danger_source.resolve()) != victim))
+	if (attacked && ((danger_source?.resolve()) != victim))
 		GLOB.move_manager.stop_looping(src)
 	if (victim == src)
 		return

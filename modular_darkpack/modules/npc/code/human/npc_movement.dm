@@ -101,7 +101,7 @@
 	if (!can_npc_move())
 		return
 	nutrition = 400
-	if (get_dist((danger_source.resolve()), src) < 7)
+	if (get_dist((danger_source?.resolve()), src) < 7)
 		last_antagonised = world.time
 	if (fire_stacks >= 1)
 		INVOKE_ASYNC(src, PROC_REF(execute_resist))
@@ -268,31 +268,32 @@
 	afraid_of_fire = locate(/obj/effect/abstract/turf_fire) in view(DEFAULT_SIGHT_DISTANCE, src)
 
 	// Combat behaviour
-	if ((danger_source.resolve()))
+	if (danger_source)
+		var/resolved_danger_source = danger_source?.resolve()
 		// Run away from the danger source if they aren't aggressive and have no weapon
 		if (!has_weapon && !aggressive)
-			GLOB.move_manager.move_away(src, (danger_source.resolve()), 10, cached_multiplicative_slowdown)
+			GLOB.move_manager.move_away(src, resolved_danger_source, 10, cached_multiplicative_slowdown)
 		else
 			// Criminals will attack anyone, others will only attack non-police
 			// DARKPACK TODO - reimplement IDs
 			/*
-			var/obj/item/card/id/id_card = (danger_source.resolve()).get_idcard(FALSE)
+			var/obj/item/card/id/id_card = (danger_source?.resolve()).get_idcard(FALSE)
 			if (!istype(id_card, /obj/item/card/id/police) || is_criminal)
 			*/
 			if(!spawned_weapon && has_weapon)
 				npc_draw_weapon()
 			if(spawned_weapon && get_active_held_item() != my_weapon)
 				has_weapon = FALSE
-			if((danger_source.resolve()))
-				if((danger_source.resolve()) == src)
+			if(resolved_danger_source)
+				if(resolved_danger_source == src)
 					danger_source = null
 				else
-					ClickOn((danger_source.resolve()))
-					face_atom((danger_source.resolve()))
-					GLOB.move_manager.move_to(src, (danger_source.resolve()), 1, cached_multiplicative_slowdown)
+					ClickOn(resolved_danger_source)
+					face_atom(resolved_danger_source)
+					GLOB.move_manager.move_to(src, resolved_danger_source, 1, cached_multiplicative_slowdown)
 
 		// Deaggro if the danger source has been beaten up
-		if (astype(danger_source.resolve(), /mob/living).stat > UNCONSCIOUS)
+		if (astype(resolved_danger_source, /mob/living).stat > UNCONSCIOUS)
 			end_combat()
 
 		// Deaggro if 30 second have passed since being antagonised
@@ -309,7 +310,7 @@
 	else if (walktarget && !staying)
 		GLOB.move_manager.move_to(src, walktarget, 0, cached_multiplicative_slowdown)
 
-	if (!has_weapon || (danger_source.resolve()) || !spawned_weapon)
+	if (!has_weapon || (danger_source?.resolve()) || !spawned_weapon)
 		return
 	if (get_active_held_item() == my_weapon)
 		npc_stow_weapon()
