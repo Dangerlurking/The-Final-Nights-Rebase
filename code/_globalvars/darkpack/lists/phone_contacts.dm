@@ -38,4 +38,5 @@ GLOBAL_LIST_INIT(contact_networks, alist(
 		SUPPLY_NETWORK = GLOB.supply_network,
 		VAMPIRE_LEADER_NETWORK = GLOB.vampire_leader_network,
 		ENDRON_NETWORK = GLOB.endron_network,
+		CLINIC_NETWORK = GLOB.clinic_network,
 	))
