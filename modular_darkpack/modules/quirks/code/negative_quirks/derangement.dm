@@ -101,7 +101,7 @@
 		objects[object] = weight
 	if(!length(objects))
 		return
-
+// TFN EDIT START
 	var/obj/speaker = pick_weight(objects)
 	var/raw_speech = pick(audible_hallucinations)
 	var/sound_file = audible_hallucinations[raw_speech]
@@ -112,7 +112,7 @@
 	if(hallucinator.client.prefs.read_preference(/datum/preference/toggle/see_rc_emotes))
 		hallucinator.create_chat_message(speaker, language, speech, spans = list("italics"))
 	to_chat(hallucinator, span_cult_italic(message))
-
+// TFN EDIT END
 	return TRUE
 
 // override for the your_mother hallucination for malkavians
@@ -168,6 +168,7 @@
 
 /obj/effect/client_image_holder/hallucination/your_mother/malk/Initialize(mapload, list/mobs_which_see_us, datum/hallucination/parent)
 	. = ..()
+	// TFN EDIT START
 	var/mob/living/hallucinator = parent.hallucinator
 	if(ishuman(hallucinator))
 		var/mob/living/carbon/dna_haver = hallucinator
@@ -177,10 +178,11 @@
 	image_state = hallucinator.icon_state
 	image_pixel_x = hallucinator.pixel_x
 	image_pixel_y = hallucinator.pixel_y
+	// TFN EDIT END
 
 // the random hallucination type will store overrides and extensions of basegame hallucinations, as well as untouched basegame hallucinations like eyes_in_the_dark
 /datum/hallucination/malk/random
-
+// TFN EDIT START
 /datum/hallucination/malk/random/proc/get_random_malk_hallucination()
 	var/static/list/uncommon_hallucinations = list(/datum/hallucination/your_mother/malk, /datum/hallucination/blood_flow/malk)
 	var/static/list/common_hallucinations = list(/datum/hallucination/eyes_in_dark) + subtypesof(/datum/hallucination/body)
@@ -189,7 +191,7 @@
 /datum/hallucination/malk/random/start()
 	hallucinator.cause_hallucination(get_random_malk_hallucination(), "malkavian derangement",)
 	return TRUE
-
+//TFN EDIT END
 // 'Blood Flow'
 /datum/hallucination/blood_flow/malk
 	random_hallucination_weight = 0
