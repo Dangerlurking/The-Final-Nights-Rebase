@@ -189,6 +189,8 @@
 		var/datum/st_stat/morality_path/morality/stat_morality = lick?.storyteller_stats[STAT_MORALITY]
 		if((stat_morality?.morality_path?.alignment != MORALITY_HUMANITY || stat_morality?.get_score() < 5) && !HAS_TRAIT(parent_mob, TRAIT_BLUSH_OF_HEALTH))
 			aura_appearance = mutable_appearance('modular_darkpack/modules/powers/icons/auras.dmi', "aura_dead", ABOVE_MOB_LAYER, parent_mob, ABOVE_GAME_PLANE)
+	if(parent_mob.stat == DEAD)
+		aura_appearance = mutable_appearance('modular_darkpack/modules/powers/icons/auras.dmi', "aura_dead", ABOVE_MOB_LAYER, parent_mob, ABOVE_GAME_PLANE)
 	// TFN EDIT END
 	update_aura_colors(aura_appearance, holder)
 	update_aura_overlays(aura_appearance, holder)
