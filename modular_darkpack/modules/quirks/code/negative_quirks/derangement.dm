@@ -170,9 +170,10 @@
 	. = ..()
 	// TFN EDIT START
 	var/mob/living/hallucinator = parent.hallucinator
+	var/static/list/outfits = subtypesof(/datum/outfit/mafia)
 	if(ishuman(hallucinator))
 		var/mob/living/carbon/dna_haver = hallucinator
-		image_icon = image(get_dynamic_human_appearance(/datum/outfit/mafia/gothic, dna_haver.dna.species.type))
+		image_icon = image(get_dynamic_human_appearance(pick(outfits), dna_haver.dna.species.type))
 		return
 	image_icon = hallucinator.icon
 	image_state = hallucinator.icon_state
