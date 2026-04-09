@@ -38,7 +38,7 @@ SUBSYSTEM_DEF(ticker)
 	var/timeLeft //pregame timer
 	var/start_at
 
-	var/gametime_offset = 21 HOURS //Deciseconds to add to world.time for station time. // DARKPACK EDIT CHANGE - ORIGINAL: var/gametime_offset = 432000
+	var/gametime_offset = 26 HOURS //Deciseconds to add to world.time for station time. // TFN EDIT CHANGE - ORIGINAL: var/gametime_offset = 21 HOURS
 	var/station_time_rate_multiplier = 2 //factor of station time progressal vs real time. // DARKPACK EDIT CHANGE - ORIGINAL: var/station_time_rate_multiplier = 12
 
 	/// Num of players, used for pregame stats on statpanel
