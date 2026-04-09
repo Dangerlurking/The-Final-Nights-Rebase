@@ -68,7 +68,8 @@
 /obj/item/smartphone/malkavian_primo
 	important_contact_of = VAMPIRE_CLAN_MALKAVIAN
 	contact_networks_pre_init = list(
-		alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Hospital Administrator", USE_JOB_TITLE = FALSE)
+		alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Psychiatrist", USE_JOB_TITLE = FALSE)
+		) // TFN EDIT CHANGE - ORIGINAL: alist(NETWORK_ID = VAMPIRE_LEADER_NETWORK, OUR_ROLE = "Hospital Administrator", USE_JOB_TITLE = FALSE)
 		)
 
 // LASOMBRA
