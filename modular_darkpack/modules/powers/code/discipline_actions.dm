@@ -86,7 +86,7 @@
 	owner.update_action_buttons()
 
 /datum/action/discipline/IsAvailable(feedback)
-	return discipline.current_power.can_activate_untargeted(feedback)
+	return discipline?.current_power?.can_activate_untargeted(feedback)
 
 /datum/action/discipline/Trigger(trigger_flags)
 	. = ..()

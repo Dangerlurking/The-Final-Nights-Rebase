@@ -102,7 +102,7 @@
 	RegisterSignal(owner, COMSIG_MOB_SAY, PROC_REF(on_talk))
 
 	for(var/mob/living/carbon/human/npc/NPC in GLOB.npc_list)
-		if (NPC.danger_source == owner)
+		if ((NPC.danger_source?.resolve()) == owner)
 			NPC.danger_source = null
 	ADD_TRAIT(owner, TRAIT_OBFUSCATED, OBFUSCATE_TRAIT)
 
@@ -152,7 +152,7 @@
 	RegisterSignal(owner, COMSIG_MOB_SAY, PROC_REF(on_talk))
 
 	for(var/mob/living/carbon/human/npc/NPC in GLOB.npc_list)
-		if (NPC.danger_source == owner)
+		if ((NPC.danger_source?.resolve()) == owner)
 			NPC.danger_source = null
 
 	ADD_TRAIT(owner, TRAIT_OBFUSCATED, OBFUSCATE_TRAIT)
@@ -208,7 +208,7 @@
 	var/mob/living/carbon/human/target = examined
 	var/image/target_image = image(target)
 	to_chat(owner, span_info("You get a good look at your target and memorize their features."))
-	LAZYSET(cached_targets, target.name, list("image" = target_image, "target" = target))
+	LAZYSET(cached_targets, target.name, list("image" = target_image, "target" = WEAKREF(target)))
 
 /datum/discipline_power/obfuscate/mask_of_a_thousand_faces/post_gain()
 	. = ..()
@@ -242,8 +242,8 @@
 		try_deactivate(direct = TRUE)
 		return
 
-	var/mob/living/carbon/human/target = cached_targets[chosen_name]["target"]
-
+	var/datum/weakref/target_weakref = cached_targets[chosen_name]["target"]
+	var/mob/living/carbon/human/target = target_weakref.resolve()
 	if(!target)
 		to_chat(owner, span_warning("You can't recall [chosen_name]'s features clearly enough!"))
 		try_deactivate(direct = TRUE)
@@ -278,7 +278,7 @@
 	to_chat(owner, span_notice("You assume the appearance of [target.name]."))
 
 	for(var/mob/living/carbon/human/npc/NPC in GLOB.npc_list)
-		if (NPC.danger_source == owner)
+		if ((NPC.danger_source?.resolve()) == owner)
 			NPC.danger_source = null
 
 /datum/discipline_power/obfuscate/mask_of_a_thousand_faces/deactivate()
@@ -325,7 +325,7 @@
 	RegisterSignal(owner, COMSIG_MOB_SAY, PROC_REF(on_talk))
 
 	for(var/mob/living/carbon/human/npc/NPC in GLOB.npc_list)
-		if (NPC.danger_source == owner)
+		if ((NPC.danger_source?.resolve()) == owner)
 			NPC.danger_source = null
 	if(prob(1))
 		SEND_SIGNAL(SSmasquerade, COMSIG_PLAYER_MASQUERADE_REINFORCE, owner)
@@ -363,7 +363,7 @@
 	RegisterSignal(owner, COMSIG_MOB_SAY, PROC_REF(on_talk))
 
 	for(var/mob/living/carbon/human/npc/NPC in GLOB.npc_list)
-		if (NPC.danger_source == owner)
+		if ((NPC.danger_source?.resolve()) == owner)
 			NPC.danger_source = null
 	ADD_TRAIT(owner, TRAIT_OBFUSCATED, OBFUSCATE_TRAIT)
 

@@ -261,6 +261,9 @@
 /datum/discipline_power/proc/can_activate(atom/target, alert = FALSE)
 	SHOULD_CALL_PARENT(TRUE)
 
+	if (!owner)
+		return FALSE
+
 	var/signal_return = SEND_SIGNAL(src, COMSIG_POWER_TRY_ACTIVATE, src, target) | SEND_SIGNAL(owner, COMSIG_POWER_TRY_ACTIVATE, src, target)
 	if (target)
 		signal_return |= SEND_SIGNAL(target, COMSIG_POWER_TRY_ACTIVATE_ON, src)

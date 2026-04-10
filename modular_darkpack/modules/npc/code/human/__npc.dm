@@ -36,11 +36,11 @@
 	var/hostile = FALSE
 	var/aggressive = FALSE
 	var/last_antagonised = 0
-	var/mob/living/danger_source
+	var/datum/weakref/danger_source
 	var/obj/effect/abstract/turf_fire/afraid_of_fire
-	var/mob/living/last_attacker
+	var/datum/weakref/last_attacker
 	var/last_health = 100
-	var/mob/living/last_damager
+	var/datum/weakref/last_damager
 
 	var/turf/walktarget	//dlya movementa
 
