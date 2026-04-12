@@ -15711,7 +15711,9 @@
 /obj/effect/turf_decal/bordur{
 	dir = 1
 	},
-/obj/structure/lamppost/sidewalk,
+/obj/structure/lamppost/sidewalk{
+	pixel_y = 14
+	},
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/outside/financialdistrict)
 "efb" = (
@@ -31871,7 +31873,7 @@
 /obj/structure/lamppost/one{
 	dir = 1;
 	pixel_y = 14;
-	layer = 4.5
+	plane = -3.9
 	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/ghetto)
@@ -42004,7 +42006,7 @@
 /obj/structure/lamppost/one{
 	dir = 1;
 	pixel_y = 14;
-	layer = 4.5
+	plane = -3.9
 	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/chinatown)
@@ -48962,8 +48964,8 @@
 	},
 /obj/structure/lamppost/one{
 	dir = 1;
-	pixel_y = 15;
-	layer = 4.5
+	pixel_y = 14;
+	plane = -3.9
 	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/unionsquare)
@@ -63270,7 +63272,7 @@
 /obj/structure/lamppost/one{
 	dir = 1;
 	pixel_y = 14;
-	layer = 4.5
+	plane = -3.9
 	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/pacificheights/industrial)
@@ -82868,7 +82870,7 @@
 /obj/structure/lamppost/one{
 	dir = 1;
 	pixel_y = 14;
-	layer = 4.5
+	plane = -3.9
 	},
 /turf/open/floor/plating/sidewalk,
 /area/vtm/outside/pacificheights)
