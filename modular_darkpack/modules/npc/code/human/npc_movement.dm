@@ -292,11 +292,8 @@
 					face_atom(resolved_danger_source)
 					GLOB.move_manager.move_to(src, resolved_danger_source, 1, cached_multiplicative_slowdown)
 
-		// Deaggro if the danger source has been beaten up or deleted
-		if (!danger_source) // TFN EDIT - ORIGINAL: if (danger_source.stat > UNCONSCIOUS)
-			end_combat()
-
-		if (danger_source && danger_source.stat > UNCONSCIOUS)
+		// Deaggro if the danger source was nulled, deleted, or beaten unconscious
+		if (!danger_source || !resolved_danger_source || resolved_danger_source.stat > UNCONSCIOUS) // TFN EDIT
 			end_combat()
 
 		// Deaggro if 30 second have passed since being antagonised
