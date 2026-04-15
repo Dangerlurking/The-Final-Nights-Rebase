@@ -99,6 +99,10 @@ GLOBAL_LIST_EMPTY(living_turfwar_npcs)
 	GLOB.living_turfwar_npcs += src
 	find_defend_spot()
 
+/mob/living/basic/trooper/gangster/Destroy()
+	GLOB.living_turfwar_npcs -= src
+	return ..()
+
 /mob/living/basic/trooper/gangster/death(gibbed)
 	. = ..()
 	GLOB.living_turfwar_npcs -= src
