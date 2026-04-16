@@ -10,14 +10,14 @@
 	"umbrella_open": [
 		{
 			"type": "icon_state",
-			"icon_state": "umbrella_handle",
-			"blend_mode": "overlay"
-		},
-		{
-			"type": "icon_state",
 			"icon_state": "umbrella_open",
 			"blend_mode": "overlay",
 			"color_ids": [1]
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "umbrella_handle",
+			"blend_mode": "overlay"
 		}
 	],
 	"umbrella_on_BACK": [
@@ -39,14 +39,14 @@
 	"parasol_open": [
 		{
 			"type": "icon_state",
-			"icon_state": "umbrella_handle",
-			"blend_mode": "overlay"
-		},
-		{
-			"type": "icon_state",
 			"icon_state": "parasol_open",
 			"blend_mode": "overlay",
 			"color_ids": [1]
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "umbrella_handle",
+			"blend_mode": "overlay"
 		}
 	]
 }
