@@ -39,6 +39,11 @@
 	"parasol_open": [
 		{
 			"type": "icon_state",
+			"icon_state": "umbrella_handle",
+			"blend_mode": "overlay"
+		},
+		{
+			"type": "icon_state",
 			"icon_state": "parasol_open",
 			"blend_mode": "overlay",
 			"color_ids": [1]
