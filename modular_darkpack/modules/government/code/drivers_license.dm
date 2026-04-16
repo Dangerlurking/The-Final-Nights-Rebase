@@ -22,7 +22,7 @@
 	if(ishuman(loc)) // In pockets
 		user = loc
 	else if(ishuman(loc?.loc)) // In backpack
-		user = loc.loc
+		user = loc.loc // TFN EDIT FIX - ORIGINAL: user = loc
 	if(user)
 		link_human(user)
 
