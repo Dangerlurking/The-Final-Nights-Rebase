@@ -12,6 +12,7 @@
 	greyscale_config_inhand_left = /datum/greyscale_config/umbrella_inhand_left
 	greyscale_config_inhand_right = /datum/greyscale_config/umbrella_inhand_right
 	greyscale_colors = "#808080"
+	post_init_icon_state = "umbrella_closed"
 	flags_1 = IS_PLAYER_COLORABLE_1
 	var/open = FALSE
 
@@ -41,6 +42,7 @@
 	name = "parasol"
 	desc = "A foldable parasol."
 	icon_state = "parasol_closed"
+	post_init_icon_state = "parasol_closed"
 	greyscale_config = /datum/greyscale_config/umbrella/parasol
 
 /obj/item/umbrella/parasol/toggle_open(mob/user)
