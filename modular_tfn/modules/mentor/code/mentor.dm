@@ -94,7 +94,7 @@ GLOBAL_PROTECT(mentor_href_token)
 
 	if(!dbfail)
 		var/datum/db_query/query_load_mentors = SSdbcore.NewQuery("SELECT ckey FROM [format_table_name("mentor")]")
-		if(!query_load_mentors.Execute())
+		if(!query_load_mentors.warn_execute())
 			message_admins("Error loading mentors from database. Loading from backup.")
 			log_sql("Error loading mentors from database. Loading from backup.")
 			dbfail = TRUE
