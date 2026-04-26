@@ -340,7 +340,7 @@
 
 /datum/surgery_operation/limb/saw_bones/tool_check(obj/item/tool)
 	// Require edged sharpness and sufficient force OR a tool behavior match
-	return (((tool.get_sharpness() & SHARP_EDGED) && tool.force >= 10) || implements[tool.tool_behaviour])
+	return (((tool.get_sharpness() & SHARP_EDGED) && tool.force >= 10) || (tool.tool_behaviour && implements[tool.tool_behaviour])) // TFN EDIT FIX - ORIGINAL: return (((tool.get_sharpness() & SHARP_EDGED) && tool.force >= 10) || implements[tool.tool_behaviour])
 
 /datum/surgery_operation/limb/saw_bones/on_preop(obj/item/bodypart/limb, mob/living/surgeon, obj/item/tool, list/operation_args)
 	display_results(
@@ -442,7 +442,7 @@
 
 /datum/surgery_operation/limb/drill_bones/tool_check(obj/item/tool)
 	// Require pointy sharpness and sufficient force OR a tool behavior match
-	return (((tool.get_sharpness() & SHARP_POINTY) && tool.force >= 10) || implements[tool.tool_behaviour])
+	return (((tool.get_sharpness() & SHARP_POINTY) && tool.force >= 10) || (tool.tool_behaviour && implements[tool.tool_behaviour])) // TFN EDIT FIX - ORIGINAL: return (((tool.get_sharpness() & SHARP_POINTY) && tool.force >= 10) || implements[tool.tool_behaviour])
 
 /datum/surgery_operation/limb/drill_bones/on_preop(obj/item/bodypart/limb, mob/living/surgeon, obj/item/tool, list/operation_args)
 	display_results(
